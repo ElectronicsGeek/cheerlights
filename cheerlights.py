@@ -41,9 +41,3 @@ class Cheerlights(object):
             rgb_list.append(value)
             
         return rgb_list
-            
-            
-        
-cl = Cheerlights()
-print (cl.last_color_rgb)
-

@@ -25,7 +25,7 @@ class Cheerlights(object):
         r = requests.get(self.CL_HEX_URL)
         j = r.json()
         
-        color = j['field2'] # # Grab most recent hex from json
+        color = j['field2'] # Grab most recent hex from json
         
         return color
         
@@ -35,7 +35,7 @@ class Cheerlights(object):
         color = self.last_color_hex.strip("#")
         
         rgb_list = []
-        for i in range(0,3):
+        for i in range(0,5,+2):
             value = int(color[i:i+2],16)
             rgb_list.append(value)
             
